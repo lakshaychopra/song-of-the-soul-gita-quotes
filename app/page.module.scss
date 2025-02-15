@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Sumana:wght@400;700&display=swap');
 
 .page {
-  height: 100vh;
+  min-height: 100vh;
   width: 100vw;
   background:
     linear-gradient(170deg,
@@ -13,6 +13,8 @@
   background-size: 100% 50%;
   background-position: top;
   font-family: "Outfit", serif;
+  display: flex;
+  flex-direction: column;
 }
 
 .horseChariot {
@@ -34,17 +36,21 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+  flex: 1;
+  position: relative;
+  padding-bottom: 6rem;
 
   .content {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    top: 8rem;
+    justify-content: flex-start;
     position: relative;
+    top: 4rem;
     gap: 1rem;
     margin: 1.6rem;
+    margin-bottom: 6rem;
     padding: 1.6rem;
     font-size: 1.25rem;
     font-weight: 400;
@@ -54,6 +60,9 @@
     width: 90%;
     z-index: 1;
     border-radius: 0.8rem;
+    min-height: fit-content;
+    max-height: calc(100vh - 16rem);
+    overflow-y: auto;
 
     .verseNumber {
       font-size: 1rem;
@@ -73,11 +82,23 @@
       font-weight: 400;
       line-height: 1.625rem;
       color: #333333;
+      text-align: center;
+      width: 100%;
+      padding: 0 1rem;
+
+      div {
+        white-space: wrap;
+        width: fit-content;
+        max-width: 100%;
+        text-align: center;
+        padding: 0.2rem 0;
+      }
     }
 
     .english {
       font-size: 1.125rem;
       font-weight: 400;
+      text-align: center;
       line-height: 1.375rem;
       color: #333333;
     }
@@ -85,6 +106,7 @@
     .hindi {
       font-size: 1.125rem;
       font-weight: 400;
+      text-align: center;
       line-height: 1.375rem;
       color: #333333;
     }
@@ -99,9 +121,11 @@
   position: fixed;
   bottom: 0;
   left: 0;
+  background-color: #fff;
+  z-index: 2;
   width: 100vw;
   background: #F0F0F04D;
-  height: 6.4rem;
+  height: 5.4rem;
   backdrop-filter: blur(58.7px);
 
   .logo {
@@ -122,8 +146,6 @@
     color: #494949;
   }
 }
-
-
 
 .social {
   display: flex;

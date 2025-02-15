@@ -20,6 +20,8 @@ export default async function Home() {
   console.log(randomIndex);
 
   const response = await axios.get(`https://vedicscriptures.github.io/slok/${randomChapter}/${(gitaData as Record<number, number[]>)[randomChapter][randomIndex]}`);
+  // const response = await axios.get(`https://vedicscriptures.github.io/slok/${9}/${14}`);
+
   const { chapter, verse, slok, prabhu, tej } = response.data;
 
   const hindiRegex = /^।।\d+\.\d+।।\s*(.+)$/;
@@ -63,7 +65,7 @@ export default async function Home() {
               hello.songofthesoul@gmail.com
             </div>
             <div className={styles.social}>
-              <a href="#" aria-label="Instagram">
+              <a href="https://www.instagram.com/songofthe.soul/" aria-label="Instagram">
                 <Image
                   src="/instagram.png"
                   alt="Instagram"
@@ -90,7 +92,6 @@ export default async function Home() {
             </div>
           </div>
         </footer>
-
       </div>
     </div>
   );
