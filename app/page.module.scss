@@ -8,8 +8,8 @@
     linear-gradient(170deg,
       #ffefef 0%,
       #f0e6ff 40%,
-      rgba(255, 255, 255, 0) 100%) no-repeat,
-    #fff;
+      rgba(255, 255, 255, 0) 100%) no-repeat
+      #fff;
   background-size: 100% 50%;
   background-position: top;
   font-family: "Outfit", serif;
@@ -70,6 +70,8 @@
       line-height: 1.875rem;
       line-height: 1.375rem;
       letter-spacing: 0.26em;
+      text-align: center;
+      margin-bottom: 0.5rem;
     }
 
     .sanskrit {
@@ -110,6 +112,16 @@
       line-height: 1.375rem;
       color: #333333;
     }
+
+    .englishT {
+      text-align: left;
+      font-size: 1.125rem;
+      font-weight: 400;
+      line-height: 1.375rem;
+      margin-left: 0.875rem;
+      margin-right: 0.875rem;
+      color: #333333;
+    }
   }
 }
 
@@ -121,10 +133,9 @@
   position: fixed;
   bottom: 0;
   left: 0;
-  background-color: #fff;
   z-index: 2;
   width: 100vw;
-  background: #F0F0F04D;
+  background: #F0F0F04D 60%;
   height: 5.4rem;
   backdrop-filter: blur(58.7px);
 
