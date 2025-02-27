@@ -9,10 +9,16 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@supabase/supabase-js": "^2.49.1",
     "axios": "^1.7.9",
+    "googleapis": "^144.0.0",
+    "mongodb": "^6.13.1",
     "next": "15.1.4",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "react-phone-input-2": "^2.15.1",
+    "react-share": "^5.2.2",
+    "twilio": "^5.4.5"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
