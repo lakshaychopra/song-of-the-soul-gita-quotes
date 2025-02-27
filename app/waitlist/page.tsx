@@ -99,6 +99,9 @@ export default function Waitlist() {
                   country={"in"}
                   placeholder="Enter your phone number"
                   value={phone}
+                  inputClass={styles.input}
+                  containerClass={styles.container}
+                  buttonClass={styles.button}
                   onChange={(value) => setPhone(value)}
                   disabled={isLoading}
                 />
